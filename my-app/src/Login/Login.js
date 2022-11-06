@@ -4,7 +4,7 @@ export default function Login()
 {
     return(
         <div className ="Login">
-            <span className="loginTitle">Login</span>
+            <span className="loginTitle">Order Up!</span>
             <form className="loginForm">
                 <label>Email</label>
                 <input type ="text" className="loginInput" placeholder="Enter your email"/>
