@@ -1,0 +1,57 @@
+.Login{
+    height: 100vh;
+    display: flex; 
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    background: url("https://cdn.discordapp.com/attachments/1029234707168239646/1038737253087858708/loginBackground.jpg");
+    background-size: cover;
+}
+
+.loginTitle{
+    font-size: 50px;
+}
+
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label{
+    margin: 10px 0;
+}
+
+.loginInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.passwordInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.registerButton{
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    right: 60px;
+    border-radius: 10px;
+}
+
+.disable-select{
+    user-select:none;
+  }
