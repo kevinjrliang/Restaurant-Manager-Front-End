@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './Login.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
