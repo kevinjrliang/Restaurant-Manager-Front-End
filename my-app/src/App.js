@@ -11,7 +11,6 @@ function App() {
         <title> Restaurant Login Page </title>
       </head>
       <div class = "header">
-        {/* <input type = "button" class = "register" value = "Sign Up"></input> */}
         <MDBBtn class="btn btn-primary">Sign Up</MDBBtn>
       </div>
       <body className='App'>
