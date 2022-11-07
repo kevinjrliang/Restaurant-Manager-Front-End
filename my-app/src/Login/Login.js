@@ -19,9 +19,7 @@ export default function Login()
             </MDBRow>
             <MDBBtn className='btn btn-primary mb-2'>Login</MDBBtn>
             <MDBBtn className='btn btn-secondary'>Sign up</MDBBtn>
-            <MDBBtn className="btn btn-light mt-2">
-                Contact Us
-            </MDBBtn>
+            <MDBBtn className="btn btn-light mt-2">Contact Us</MDBBtn>
             </MDBCard>
         </div>
     )
