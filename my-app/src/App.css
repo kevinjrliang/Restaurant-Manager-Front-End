@@ -91,6 +91,6 @@ button.btn-primary:hover {
   background-color: #787a7a;
 }
 
-.unsetCase {
+button.btn-primary {
   text-transform: unset;
 }
