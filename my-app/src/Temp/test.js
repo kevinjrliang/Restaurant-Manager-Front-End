@@ -6,20 +6,19 @@ import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn,
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <head>
         <title> Restaurant Login Page </title>
       </head>
-      <div class = "header">
-        {/* <input type = "button" class = "register" value = "Sign Up"></input> */}
-        <MDBBtn class="btn btn-primary">Sign Up</MDBBtn>
-      </div>
-      <body className='App'>
+      <body>
+        <div class = "header">
+        
+        </div>
         <div class = "title">
           <h1 id = "headertext"> Order Up! </h1>
         </div>
         <img class = "App-logo" src ={logo} alt="logo"></img>
-        <MDBCard className='w-25'>
+        <MDBCard>
           <MDBCardBody>
           <div class = "form">
             <form action = "loginPage.html">
@@ -33,7 +32,12 @@ function App() {
               {/* <input class = "inputs" type = "password" name = "password" placeholder = "Enter your password"></input> */}
               <MDBInput className="bg-light" label='password' id='form1' type='text'></MDBInput>
               <br></br>
-              <MDBBtn class="btn btn-primary">Login</MDBBtn>
+              <MDBRow className='mb-3'>
+                <MDBBtn type = "button" class="btn btn-primary unsetCase">Login</MDBBtn>
+              </MDBRow>
+              <MDBRow>
+                <MDBBtn type = "button" class="btn btn-primary unsetCase">Sign Up</MDBBtn>
+              </MDBRow>
             </form>
           </div>
           </MDBCardBody>
