@@ -33,10 +33,10 @@ function App() {
               <MDBInput className="bg-light" label='password' id='form1' type='text'></MDBInput>
               <br></br>
               <MDBRow className='mb-3'>
-                <MDBBtn type = "button" class="btn btn-primary unsetCase">Login</MDBBtn>
+                <MDBBtn class="btn btn-primary unsetCase">Login</MDBBtn>
               </MDBRow>
               <MDBRow>
-                <MDBBtn type = "button" class="btn btn-primary unsetCase">Sign Up</MDBBtn>
+                <MDBBtn class="btn btn-primary unsetCase">Sign Up</MDBBtn>
               </MDBRow>
             </form>
           </div>
