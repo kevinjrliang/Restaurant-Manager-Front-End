@@ -2,10 +2,14 @@
     text-align: center;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     height: 100vh;
     flex-direction: column;
     background-color:#282c34;
     padding-top: 2em;
+=======
+    flex-direction: column;
+>>>>>>> f4b852d93b6a751a9751507593bdb50740b0f56b
   }
   
   .App-logo {
@@ -19,6 +23,7 @@
     }
   }
   
+<<<<<<< HEAD
   .App-header {
     min-height: 100vh;
     display: flex;
@@ -33,6 +38,8 @@
     color: #61dafb;
   }
   
+=======
+>>>>>>> f4b852d93b6a751a9751507593bdb50740b0f56b
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
@@ -41,8 +48,80 @@
       transform: rotate(360deg);
     }
   }
+<<<<<<< HEAD
   .card {
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
+=======
+  
+  body {
+    background-color: lightgray;
+  }
+  
+  #headertext {
+    font-weight: normal;
+  }
+  
+  div.title {
+    text-align: center;
+  }
+  
+  div.header {
+    margin: 0pt;
+    text-align: right;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+  }
+  
+  div.form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  div.pic {
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 0px;
+  }
+  
+  div.bottom {
+    background-color: lightgray;
+    margin: 0pt;
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  /* a:hover {
+    background-color: lightgrey;
+  } */
+  
+  @media (max-width: 815px) {
+    div.pic, div.info {width: 100%}
+  }
+  
+  .inputs {
+    /* width: 25%; */
+    padding: 12px 20px;
+    margin: 8px;
+    margin-left: 1px;
+    display: inline-block;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #787a7a;
+  }
+  
+  button.btn {
+    text-transform: unset;
+>>>>>>> f4b852d93b6a751a9751507593bdb50740b0f56b
   }
