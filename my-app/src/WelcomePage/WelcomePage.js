@@ -8,7 +8,7 @@ export default function WelcomePage()
 {
     return(
         <div className ="Welcome">
-            <span className="welcomeTitle">Hello 'Name'</span>
+            <span className="welcomeTitle">Welcome</span>
             <body className="flex">
                 <div className="numpad">
                     <div className="display">

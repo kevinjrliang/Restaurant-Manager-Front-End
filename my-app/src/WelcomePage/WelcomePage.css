@@ -51,8 +51,8 @@ body{
 /* Style for Extra Large Screen */
 @media (max-width:3920px) {
     .btn-sq-responsive {
-        width:150px !important;
-        height:150px !important;
+        width: 125px !important;
+        height: 125px !important;
         border-radius: 25%;
     }
 }
