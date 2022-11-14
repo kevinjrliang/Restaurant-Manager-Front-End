@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-import "./Login.css"
-
-export default function Login()
-{
-    return(
-        <div className ="Login">
-            <span className="loginTitle">Order Up!</span>
-            <form className="loginForm">
-                <label>Email</label>
-                <input type ="text" className="loginInput" placeholder="Enter your email"/>
-                <label>Password</label>
-                <input type ="password" className="passwordInput" placeholder="Enter your password"/>
-                <button className="loginButton">Login</button>
-            </form>
-            <button className="registerButton">Register</button>
-        </div>
-    )
-}
-=======
 import logo from '../logo.svg';
 import './Login.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
@@ -67,4 +47,3 @@ function Login() {
 }
 
 export default Login;
->>>>>>> 7a7016f5b80975de1a715ec73d5293bbf5e2be1a
