@@ -1,0 +1,80 @@
+.Welcome{
+    height: 100vh;
+    display: flex; 
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.welcomeTitle{
+    font-size: 50px;
+}
+
+button.btn {
+    text-transform: unset;
+  }
+  
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: lightgray;
+    color: black;
+    font-family:'sans-serif';
+
+}
+
+.numPad{
+    border-radius: 10px;
+    background: lightgray;
+}
+
+.numPad .display input{
+    width: 300px;
+    padding: 20px;
+    outline: none;
+    border-radius: none;
+    background: none;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/* Style for Extra Large Screen */
+@media (max-width:3920px) {
+    .btn-sq-responsive {
+        width:150px !important;
+        height:150px !important;
+        border-radius: 25%;
+    }
+}
+
+/* Style for Large Screen */
+@media (max-width:991px) {
+    .btn-sq-responsive {
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 25%;
+    }
+}
+
+/* Style for Medium Screen */
+@media (max-width:767px) {
+    .btn-sq-responsive {
+        width: 75px !important;
+        height: 75px !important;
+        border-radius: 25%;
+    }
+}
+
+.col {
+    padding:0px;
+}
