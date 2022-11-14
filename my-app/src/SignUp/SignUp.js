@@ -1,39 +1,20 @@
-<<<<<<< HEAD
-import "./Login.css"
-
-export default function Login()
-{
-    return(
-        <div className ="Login">
-            <span className="loginTitle">Order Up!</span>
-            <form className="loginForm">
-                <label>Email</label>
-                <input type ="text" className="loginInput" placeholder="Enter your email"/>
-                <label>Password</label>
-                <input type ="password" className="passwordInput" placeholder="Enter your password"/>
-                <button className="loginButton">Login</button>
-            </form>
-            <button className="registerButton">Register</button>
-        </div>
-    )
-}
-=======
 import logo from '../logo.svg';
-import './Login.css';
+import './SignUp.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
   MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
-function Login() {
+
+function SignUp() {
   return (
     <div>
       <head>
-        <title> Restaurant Login Page </title>
+        <title> Sign Up Page </title>
       </head>
       <div class = "header">
-        {/* <input type = "button" class = "register" value = "Sign Up"></input> */}
-        <Link to="/signUp"><MDBBtn class="btn btn-primary">Sign Up</MDBBtn></Link>
+        {/* <input type = "button" class = "register" value = "Home"></input> */}
+        <MDBBtn class="btn btn-primary">Home</MDBBtn>
       </div>
       <body className='App'>
         <div class = "title">
@@ -54,9 +35,14 @@ function Login() {
               {/* <input class = "inputs" type = "password" name = "password" placeholder = "Enter your password"></input> */}
               <MDBInput className="bg-light" label='password' id='form1' type='text'></MDBInput>
               <br></br>
-              <MDBBtn class="btn btn-primary">Login</MDBBtn>
-              <br></br><br></br>
-              Don't have an account? Sign up <Link to="/signUp">here</Link>
+              <label for = "passConfirm"><b>Confirm Password</b></label>
+              <br></br>
+              {/* <input class = "inputs" type = "passwConfirm" name = "password" placeholder = "Confirm your password"></input> */}
+              <MDBInput className="bg-light" label='confirm password' id='form1' type='text'></MDBInput>
+              <br></br>
+              <MDBBtn class="btn btn-primary">Sign up</MDBBtn>
+              <br></br> <br></br>
+              Already have an account? Login <Link to="/login">here</Link>
             </form>
           </div>
           </MDBCardBody>
@@ -66,5 +52,4 @@ function Login() {
   );
 }
 
-export default Login;
->>>>>>> 7a7016f5b80975de1a715ec73d5293bbf5e2be1a
+export default SignUp;
