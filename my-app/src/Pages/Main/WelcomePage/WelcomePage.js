@@ -2,7 +2,7 @@ import "./WelcomePage.css"
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
     MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
     MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
-
+// Yooo
 
 export default function WelcomePage()
 {
