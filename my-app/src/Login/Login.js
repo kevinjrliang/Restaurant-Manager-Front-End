@@ -3,7 +3,6 @@ import './Login.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
   MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -13,7 +12,7 @@ function Login() {
       </head>
       <div class = "header">
         {/* <input type = "button" class = "register" value = "Sign Up"></input> */}
-        <Link to="/signUp"><MDBBtn class="btn btn-primary">Sign Up</MDBBtn></Link>
+        <MDBBtn class="btn btn-primary">Sign Up</MDBBtn>
       </div>
       <body className='App'>
         <div class = "title">
@@ -23,7 +22,7 @@ function Login() {
         <MDBCard className='w-25'>
           <MDBCardBody>
           <div class = "form">
-            <form>
+            <form action = "loginPage.html">
               <label for = "email"><b>Email</b></label>
               <br></br>
               {/* <input class = "inputs" type = "text" name = "email" placeholder = "Enter your email"></input> */}
@@ -35,8 +34,6 @@ function Login() {
               <MDBInput className="bg-light" label='password' id='form1' type='text'></MDBInput>
               <br></br>
               <MDBBtn class="btn btn-primary">Login</MDBBtn>
-              <br></br><br></br>
-              Don't have an account? Sign up <Link to="/signUp">here</Link>
             </form>
           </div>
           </MDBCardBody>
