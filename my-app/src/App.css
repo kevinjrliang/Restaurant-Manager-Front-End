@@ -1,0 +1,39 @@
+/* Style for Extra Large Screen */
+@media (max-width:3920px) {
+    .btn-sq-responsive {
+        width: 75px !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 75px !important;
+        font-size:large;
+        margin: 5px;
+    }
+}
+
+/* Style for Large Screen */
+@media (max-width:991px) {
+    .btn-sq-responsive {
+        width: 75px !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 75px !important;
+        font-size:large;
+        margin: 3.75px;
+    }
+}
+
+/* Style for Medium Screen */
+@media (max-width:767px) {
+    .btn-sq-responsive {
+        width: 50px !important; /* whatever width you want for mobile screen */
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: 50px !important; /* whatever height you want for mobile screen */
+        font-size:5px;
+        padding: 0px;
+        font-size:medium;
+        margin: 2.5px;
+    }
+}
+    
+ 

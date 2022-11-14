@@ -1,0 +1,8 @@
+body {
+  background-color: lightgray;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+}
