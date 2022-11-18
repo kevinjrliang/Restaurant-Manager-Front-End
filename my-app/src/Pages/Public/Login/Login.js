@@ -1,4 +1,4 @@
-import logo from '../../../logo.svg';
+import logo from '../../../Images/logo.svg';
 import './Login.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
@@ -17,10 +17,11 @@ function Login() {
 
   return (
     <div>
-      <title> Restaurant Login Page </title>
-      <div className = "header">
+      <div className = "login-header">
         {/* <input type = "button" className = "register" value = "Sign Up"></input> */}
-        <MDBBtn className ="btn btn-primary">Sign Up</MDBBtn>
+        <Link to="/signUp">
+          <MDBBtn className ="btn btn-primary">Sign Up</MDBBtn>
+        </Link>
       </div>
       <div className='Login'>
         <div className = "title">
@@ -41,9 +42,11 @@ function Login() {
               {/* <input className = "inputs" type = "password" name = "password" placeholder = "Enter your password"></input> */}
               <MDBInput className="bg-light" label='password' id='form1' type='password' onChange={(e) => setPassword(e.target.value)}></MDBInput>
               <br></br>
-              <Link to="/login">
+              <Link to="/main">
                 <MDBBtn className ="btn btn-primary" onClick={() => {login()}}>Login</MDBBtn>
               </Link>
+              <br></br> <br></br>
+              Don't have an account? Signup <Link to="/signUp">here</Link>
             </form>
           </div>
           </MDBCardBody>

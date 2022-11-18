@@ -9,21 +9,27 @@
     background-size: cover;
 }
 
-.welcomeTitle{
+.Welcome .passwordInput{
+    text-align: center;
+    font-size: 200%;
+    caret-color: transparent;
+}
+
+.Welcome .welcomeTitle{
     font-size: 50px;
 }
 
-button.btn {
+.Welcome button.btn {
     text-transform: unset;
   }
   
-.flex{
+.Welcome body.flex{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body{
+.Welcome body{
     width: 100vw;
     height: 100vh;
     background: lightgray;
@@ -32,34 +38,27 @@ body{
 
 }
 
-.numPad{
+.Welcome .numPad{
     border-radius: 10px;
-    background: lightgray;
+    background: gray;
 }
 
-.numPad .display input{
-    width: 300px;
-    padding: 20px;
-    outline: none;
-    border-radius: none;
-    background: none;
-    text-align: center;
-    font-size: 2em;
+.Welcome input[type=number] {
+    -webkit-text-security: disc;
 }
-
 
 /* Style for Extra Large Screen */
 @media (max-width:3920px) {
-    .btn-sq-responsive {
-        width:150px !important;
-        height:150px !important;
+    .Welcome .btn-sq-responsive {
+        width: 125px !important;
+        height: 125px !important;
         border-radius: 25%;
     }
 }
 
 /* Style for Large Screen */
 @media (max-width:991px) {
-    .btn-sq-responsive {
+    .Welcome .btn-sq-responsive {
         width: 100px !important;
         height: 100px !important;
         border-radius: 25%;
@@ -68,13 +67,13 @@ body{
 
 /* Style for Medium Screen */
 @media (max-width:767px) {
-    .btn-sq-responsive {
+    .Welcome .btn-sq-responsive {
         width: 75px !important;
         height: 75px !important;
         border-radius: 25%;
     }
 }
 
-.col {
-    padding:0px;
+.Welcome .col {
+    padding:1px;
 }

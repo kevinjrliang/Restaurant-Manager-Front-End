@@ -1,0 +1,98 @@
+.SignUp {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .SignUp-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .SignUp-logo {
+      animation: SignUp-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes SignUp-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .SignUp #headertext {
+    font-weight: normal;
+  }
+  
+  .SignUp div.title {
+    text-align: center;
+  }
+  
+  div.signup-header {
+    margin: 0pt;
+    text-align: right;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+  }
+  
+  .SignUp div.form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .SignUp div.pic {
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 0px;
+  }
+  
+  .SignUp div.bottom {
+    background-color: lightgray;
+    margin: 0pt;
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+
+  .SignUp a:link {
+    text-decoration: none;
+  }
+  
+  .SignUp a:visited {
+    color: blue;
+  }
+
+  .SignUp a:hover {
+    background-color: lightgrey;
+  }
+  
+  @media (max-width: 815px) {
+    .SignUp div.pic, div.info {width: 100%}
+  }
+  
+  .SignUp .inputs {
+    /* width: 25%; */
+    padding: 12px 20px;
+    margin: 8px;
+    margin-left: 1px;
+    display: inline-block;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  .SignUp button.btn-primary:hover {
+    background-color: #787a7a;
+  }
+  
+  .SignUp button.btn {
+    text-transform: unset;
+  }
