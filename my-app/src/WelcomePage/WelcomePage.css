@@ -1,0 +1,90 @@
+.Welcome{
+    height: 100vh;
+    display: flex; 
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.passwordInput{
+    text-align: center;
+    font-size: 200%;
+    caret-color: transparent;
+}
+
+.welcomeTitle{
+    font-size: 50px;
+}
+
+button.btn {
+    text-transform: unset;
+  }
+  
+body.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: lightgray;
+    color: black;
+    font-family:'sans-serif';
+
+}
+
+.numPad{
+    border-radius: 10px;
+    background: gray;
+}
+
+input[type=number] {
+    -webkit-text-security: disc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/* Style for Extra Large Screen */
+@media (max-width:3920px) {
+    .btn-sq-responsive {
+        width: 125px !important;
+        height: 125px !important;
+        border-radius: 25%;
+    }
+}
+
+/* Style for Large Screen */
+@media (max-width:991px) {
+    .btn-sq-responsive {
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 25%;
+    }
+}
+
+/* Style for Medium Screen */
+@media (max-width:767px) {
+    .btn-sq-responsive {
+        width: 75px !important;
+        height: 75px !important;
+        border-radius: 25%;
+    }
+}
+
+.col {
+    padding:1px;
+}
