@@ -1,4 +1,4 @@
-import logo from '../../../logo.svg';
+import logo from '../../../Images/logo.svg';
 import './Login.css';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
@@ -17,8 +17,7 @@ function Login() {
 
   return (
     <div>
-      <title> Restaurant Login Page </title>
-      <div className = "header">
+      <div className = "login-header">
         {/* <input type = "button" className = "register" value = "Sign Up"></input> */}
         <Link to="/signUp">
           <MDBBtn className ="btn btn-primary">Sign Up</MDBBtn>

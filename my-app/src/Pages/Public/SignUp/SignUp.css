@@ -1,22 +1,22 @@
-.App {
+.SignUp {
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   
-  .App-logo {
+  .SignUp-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
   @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
+    .SignUp-logo {
+      animation: SignUp-logo-spin infinite 20s linear;
     }
   }
   
-  @keyframes App-logo-spin {
+  @keyframes SignUp-logo-spin {
     from {
       transform: rotate(0deg);
     }
@@ -25,19 +25,15 @@
     }
   }
   
-  body {
-    background-color: lightgray;
-  }
-  
-  #headertext {
+  .SignUp #headertext {
     font-weight: normal;
   }
   
-  div.title {
+  .SignUp div.title {
     text-align: center;
   }
   
-  div.header {
+  div.signup-header {
     margin: 0pt;
     text-align: right;
     padding: 10px;
@@ -45,19 +41,19 @@
     color: black;
   }
   
-  div.form {
+  .SignUp div.form {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;
   }
-  div.pic {
+  .SignUp div.pic {
     text-align: center;
     width: 100%;
     height: 30%;
     margin-top: 0px;
   }
   
-  div.bottom {
+  .SignUp div.bottom {
     background-color: lightgray;
     margin: 0pt;
     text-align: center;
@@ -65,23 +61,23 @@
     padding: 10px;
   }
 
-  a:link {
+  .SignUp a:link {
     text-decoration: none;
   }
   
-  a:visited {
+  .SignUp a:visited {
     color: blue;
   }
 
-  a:hover {
+  .SignUp a:hover {
     background-color: lightgrey;
   }
   
   @media (max-width: 815px) {
-    div.pic, div.info {width: 100%}
+    .SignUp div.pic, div.info {width: 100%}
   }
   
-  .inputs {
+  .SignUp .inputs {
     /* width: 25%; */
     padding: 12px 20px;
     margin: 8px;
@@ -93,10 +89,10 @@
     font-size: 15px;
   }
   
-  button.btn-primary:hover {
+  .SignUp button.btn-primary:hover {
     background-color: #787a7a;
   }
   
-  button.btn {
+  .SignUp button.btn {
     text-transform: unset;
   }

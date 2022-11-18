@@ -1,4 +1,4 @@
-.column-title {
+.Home-Page .column-title {
   display: flex;
   justify-content: flex-end;
   text-align: center;
@@ -8,20 +8,16 @@
   border-right-style: solid;
 }
 
-.btn-module-column {
+.Home-Page .btn-module-column {
   margin: 10px 5px 10px 5px;
 }
 
-.row:not(:last-child) {
+.Home-Page .row:not(:last-child) {
   border-bottom-width: 2px;
   border-bottom-style: solid;
 }
 
-.Home-Page {
+.Home-Page .Home-Page {
   display: flex;
   flex-direction: column;
-}
-
-html, body {
-  height:100%
 }

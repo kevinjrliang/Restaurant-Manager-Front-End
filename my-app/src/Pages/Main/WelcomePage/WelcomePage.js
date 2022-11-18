@@ -1,4 +1,5 @@
 import "./WelcomePage.css"
+import { Link } from "react-router-dom";
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
     MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
     MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
@@ -82,7 +83,9 @@ export default function WelcomePage()
                                 <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(0)}}>0</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={Login}>Login</MDBBtn>
+                                <Link to="/main/home">
+                                    <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={Login}>Login</MDBBtn>
+                                </Link>
                             </MDBCol>
                         </MDBRow>
                     </div>

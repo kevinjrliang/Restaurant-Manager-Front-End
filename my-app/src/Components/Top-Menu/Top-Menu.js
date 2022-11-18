@@ -1,6 +1,6 @@
 import { MDBBtn } from 'mdb-react-ui-kit';
 import './Top-Menu.css';
-import Logo from '../../logo.svg'
+import Logo from '../../Images/logo.svg'
 
 
 function TopMenu() {
