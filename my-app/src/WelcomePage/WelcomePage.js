@@ -3,26 +3,28 @@ import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn,
     MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
     MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
 
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 
 export default function WelcomePage()
 {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState("");
 
     function getData(val)
     {
         setData(val.target.value);
-        console.warn(val.target.value);
     }
 
-    function appendText()
+    function appendText(val)
     {
-        
+        if(data.length < 4)
+        {
+            setData(data+val);
+        }
     }
 
     function removeText()
     {
-        
+        setData(data.slice(0,-1));
     }
 
     function Login()
@@ -37,39 +39,39 @@ export default function WelcomePage()
                 <div className="numpad">
                     <div className="nums">
                         <MDBRow>
-                            <MDBInput className="passwordInput" id="passwordID" type="number" step ="0.01" onChange={getData}></MDBInput>
+                            <MDBInput className="passwordInput" id="passwordID" type="password" value={data} maxLength={4} onChange={getData}></MDBInput>
                         </MDBRow>
                         <MDBRow>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>1</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(1)}}>1</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>2</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(2)}}>2</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>4</MDBBtn>
-                            </MDBCol>
-                        </MDBRow>
-                        <MDBRow>
-                            <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>4</MDBBtn>
-                            </MDBCol>
-                            <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>4</MDBBtn>
-                            </MDBCol>
-                            <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>4</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(3)}}>3</MDBBtn>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>7</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(4)}}>4</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>8</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(5)}}>5</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>9</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(6)}}>6</MDBBtn>
+                            </MDBCol>
+                        </MDBRow>
+                        <MDBRow>
+                            <MDBCol className="col-4">
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(7)}}>7</MDBBtn>
+                            </MDBCol>
+                            <MDBCol className="col-4">
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(8)}}>8</MDBBtn>
+                            </MDBCol>
+                            <MDBCol className="col-4">
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(9)}}>9</MDBBtn>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow>
@@ -77,7 +79,7 @@ export default function WelcomePage()
                                 <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={removeText}>Back</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={appendText}>0</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(0)}}>0</MDBBtn>
                             </MDBCol>
                             <MDBCol className="col-4">
                                 <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={Login}>Login</MDBBtn>
