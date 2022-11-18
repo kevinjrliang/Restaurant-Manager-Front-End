@@ -9,6 +9,12 @@
     background-size: cover;
 }
 
+.passwordInput{
+    text-align: center;
+    font-size: 200%;
+    caret-color: transparent;
+}
+
 .welcomeTitle{
     font-size: 50px;
 }
@@ -17,7 +23,7 @@ button.btn {
     text-transform: unset;
   }
   
-.flex{
+body.flex{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,19 +40,23 @@ body{
 
 .numPad{
     border-radius: 10px;
-    background: lightgray;
+    background: gray;
 }
 
-.numPad .display input{
-    width: 300px;
-    padding: 20px;
-    outline: none;
-    border-radius: none;
-    background: none;
-    text-align: center;
-    font-size: 2em;
+input[type=number] {
+    -webkit-text-security: disc;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
 
 /* Style for Extra Large Screen */
 @media (max-width:3920px) {
@@ -76,5 +86,5 @@ body{
 }
 
 .col {
-    padding:0px;
+    padding:1px;
 }
