@@ -1,5 +1,6 @@
 import './Setup.css'
 import Account from './Account/Account';
+import Confirm from './Confirm/Confirm';
 
 import {
     BrowserRouter as Router,
@@ -14,6 +15,7 @@ function Setup()
         <div className='Setup'>
             <Routes>
                 <Route path= '/' element={<Account/>}> </Route>
+                <Route path= '/confirm' element={<Confirm/>}> </Route>
             </Routes>
         </div>
     );

@@ -1,5 +1,6 @@
 import './Account.css'
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
     MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
     MDBInput, MDBTable, MDBTableHead, MDBTableBody, MDBCardHeader, MDBCardFooter} from 'mdb-react-ui-kit';
@@ -9,10 +10,16 @@ export default function Account()
 {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [phoneNo, setPhoneNo] = useState("");
+    const [restaurantPhoneNo, setRestaurantPhoneNo] = useState("");
+    const [restaurantName, setRestaurantName] = useState("");
+    const [street, setStreet] = useState("");
+    const [city, setCity] = useState("");
+    const [provState, setProvState] = useState("");
+    const [postalCode, setPostalCode] = useState("");
   
     function account() {
-      alert(`${firstName}, ${lastName}, ${phoneNumber}`)
+      alert(`${firstName}, ${lastName}, ${phoneNo}, ${restaurantPhoneNo}, ${restaurantName}, ${street}, ${city}, ${provState}, ${postalCode}`)
     }
 
     return(
@@ -30,9 +37,32 @@ export default function Account()
                     <MDBInput className="bg-light" label='Last Name' id='form1' type='text' onChange={(e) => setLastName(e.target.value)}></MDBInput>
                     <br></br>
                     <br></br>
-                    <MDBInput className="bg-light" label='Phone Number' id='form1' type='text' onChange={(e) => setPhoneNumber(e.target.value)}></MDBInput>
+                    <MDBInput className="bg-light" label='Phone Number' id='form1' type='text' onChange={(e) => setPhoneNo(e.target.value)}></MDBInput>
                     <br></br>
-                    <MDBBtn href='#'>Next</MDBBtn>
+                    <br></br>
+                    <MDBInput className="bg-light" label='Restaurant Phone Number' id='form1' type='text' onChange={(e) => setRestaurantPhoneNo(e.target.value)}></MDBInput>
+                    <br></br>
+                    <br></br>
+                        <MDBInput className="bg-light" label='Street' id='form1' type='text' onChange={(e) => setStreet(e.target.value)}></MDBInput>
+                    <br></br>
+                    <br></br>
+                        <MDBInput className="bg-light" label='City' id='form1' type='text' onChange={(e) => setCity(e.target.value)}></MDBInput>
+                    <br></br>
+                    <br></br>
+                        <MDBInput className="bg-light" label='Province/State' id='form1' type='text' onChange={(e) => setProvState(e.target.value)}></MDBInput>
+                    <br></br>
+                    <br></br>
+                        <MDBInput className="bg-light" label='Postal Code/Zip' id='form1' type='text' onChange={(e) => setPostalCode(e.target.value)}></MDBInput>
+                    <br></br>
+                    {/* <MDBCard>
+                        <br></br>
+                        <MDBInput className="bg-light" label='Street' id='form1' type='text' onChange={(e) => setStreet(e.target.value)}></MDBInput>
+                        <br></br>
+                    </MDBCard> */}
+                    <Link to="/main/setup/confirm">
+                        <MDBBtn href='#'>Next</MDBBtn>
+                    </Link>
+                    
                 </MDBCardBody>
                 {/* <MDBCardFooter className='text-muted'>2 days ago</MDBCardFooter> */}
             </MDBCard>
