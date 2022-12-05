@@ -1,8 +1,7 @@
 import logo from '../../../Images/logo.svg';
 import './SignUp.css';
-import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-  MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-  MDBInput, MDBTable, MDBTableHead, MDBTableBody, MDBValidation, MDBValidationItem} from 'mdb-react-ui-kit';
+import {MDBCardBody, MDBBtn, 
+  MDBCard, MDBInput, MDBValidation, MDBValidationItem} from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import { createUserAccount, getAllUsers } from '../../../Services/UserAccountService'
 import { useState } from 'react';
@@ -46,19 +45,27 @@ function SignUp() {
     setFormValue({ ...formValue, [e.target.name]: e.target.value });
   };
 
-  function onSubmit(e) {
-    e.preventDefault();
+  function validateForm(e) {
     const elements = Object.values(e.target.elements)
     for (let i = 0; i < elements.length; i++) {
       if (!elements[i].checkValidity()) {
-        return;
+        return false;
       }
+    }
+    return true;
+  }
+
+  function onSubmit(e) {
+    e.preventDefault();
+    if (!validateForm(e)) {
+      return;
     }
     const data = {
       username: formValue.username,
       password: formValue.password,
       access_level: Access_Level.owner
     }
+    const ret = createUserAccount(data);
     
     createUserAccount(data).then(res => {
       if (!res.error && res.data) {
@@ -77,7 +84,7 @@ function SignUp() {
     <div>
       <div className = "signup-header">
         <Link to="/">
-          <MDBBtn className ="btn btn-primary">Log In</MDBBtn>
+          <MDBBtn className ="btn btn-primary" type='button'>Log In</MDBBtn>
         </Link>
       </div>
       <div className='SignUp'>

@@ -1,12 +1,10 @@
 import logo from '../../../Images/logo.svg';
 import './Login.css';
-import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-  MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-  MDBInput, MDBTable, MDBTableHead, MDBTableBody, MDBValidation, MDBValidationItem} from 'mdb-react-ui-kit';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import {MDBCardBody, MDBBtn, 
+  MDBCard, MDBInput, MDBValidation, MDBValidationItem} from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 import { login } from '../../../Services/UserAccountService'
 import { useState } from 'react';
-import { Access_Level } from '../../../Models/User_Accounts/enums';
 import toast, { Toaster, ToastBar } from "react-hot-toast";
 
 function Login() {
@@ -41,7 +39,8 @@ function Login() {
       if (!res.error) {
         console.log(res);
         successToast();
-        setTimeout(() => window.location.href="/main/home", 2000);
+        localStorage.setItem('user', res.data);
+        setTimeout(() => window.location.href="/main", 2000);
       } 
       else {
         userDoesNotExistToast();
@@ -102,7 +101,7 @@ function Login() {
             </MDBValidationItem>
             <br></br>
             <MDBValidationItem className='col-12' feedback='This field can not be left blank' invalid>
-              <label><b>Email</b></label>
+              <label><b>Password</b></label>
               <br></br>
               <MDBInput 
                 label='Password'
