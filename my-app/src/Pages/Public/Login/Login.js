@@ -1,9 +1,8 @@
 import logo from '../../../Images/logo.svg';
 import './Login.css';
-import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-  MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-  MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import {MDBCardBody, MDBBtn, 
+  MDBCard, MDBInput} from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function Login() {

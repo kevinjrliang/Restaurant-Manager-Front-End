@@ -1,8 +1,6 @@
-import logo from '../../../Images/logo.svg';
 import './Home-Page.css';
-import {MDBCardBody, MDBCardHeader, MDBCardText, MDBBtn, 
-  MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-  MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
+import {MDBCardBody, MDBCardHeader, MDBBtn, 
+  MDBCard, MDBRow, MDBCol} from 'mdb-react-ui-kit';
 
 function HomePage() {
   return (

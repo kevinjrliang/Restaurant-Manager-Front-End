@@ -3,14 +3,10 @@ import HomePage from './Home-Page/Home-Page'
 import WelcomePage from './WelcomePage/WelcomePage';
 import TopMenu from '../../Components/Top-Menu/Top-Menu';
 import Setup from './Setup-Pages/Setup';
-import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
 import {
-  BrowserRouter as Router,
   Routes,
-  Route,
-  Link
-} from 'react-router-dom';
+  Route} from 'react-router-dom';
 
 
 function Main() {

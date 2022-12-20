@@ -1,8 +1,7 @@
 import logo from '../../../Images/logo.svg';
 import './SignUp.css';
-import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-  MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-  MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
+import {MDBCardBody, MDBBtn, 
+  MDBCard, MDBInput} from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
 

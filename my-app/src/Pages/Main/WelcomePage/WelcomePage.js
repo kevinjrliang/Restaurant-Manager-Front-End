@@ -1,8 +1,7 @@
 import "./WelcomePage.css"
 import { Link } from "react-router-dom";
-import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-    MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-    MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
+import {MDBBtn, 
+    MDBRow, MDBCol, MDBInput} from 'mdb-react-ui-kit';
 
 import React, { useState } from 'react';
 

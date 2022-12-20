@@ -1,9 +1,7 @@
 import './Confirm.css'
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, 
-    MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
-    MDBInput, MDBTable, MDBTableHead, MDBTableBody, MDBCardHeader, MDBCardFooter} from 'mdb-react-ui-kit';
+    MDBCard, MDBInput, MDBCardHeader} from 'mdb-react-ui-kit';
 
 export default function Confirm()
 {
@@ -14,15 +12,15 @@ export default function Confirm()
                 <MDBCardBody>
                     <MDBCardTitle>One Last Step!</MDBCardTitle>
                     <MDBCardText>We just sent you a confirmation email along with a code! Please enter the code below!</MDBCardText>
-                    <MDBInput className="confirmInput" type="text"></MDBInput>        
+                    <MDBInput className="w-50" type="text"></MDBInput>        
                     <br></br>
                     <br></br>                    
                     <Link to="/main/setup/">
-                        <MDBBtn href='#'>Back</MDBBtn>
+                        <MDBBtn>Back</MDBBtn>
                     </Link>
                     <br></br>
                     <br></br>
-                    <MDBBtn href='#'>Confirm</MDBBtn>
+                    <MDBBtn>Confirm</MDBBtn>
                 </MDBCardBody>
             </MDBCard>
         </div>
