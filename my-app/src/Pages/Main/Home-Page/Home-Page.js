@@ -3,7 +3,6 @@ import './Home-Page.css';
 import {MDBCardBody, MDBCardHeader, MDBCardText, MDBBtn, 
   MDBCard, MDBRow, MDBCol, MDBCardOverlay, MDBCardImage, MDBFooter, 
   MDBInput, MDBTable, MDBTableHead, MDBTableBody} from 'mdb-react-ui-kit';
-import { DndProvider } from "react-dnd";
 
 function HomePage() {
   return (
