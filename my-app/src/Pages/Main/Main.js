@@ -1,6 +1,7 @@
 import './Main.css';
 import HomePage from './Home-Page/Home-Page'
 import WelcomePage from './WelcomePage/WelcomePage';
+import FloorPlan from './FloorPlan-Page/FloorPlan';
 import TopMenu from '../../Components/Top-Menu/Top-Menu';
 import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
@@ -18,6 +19,7 @@ function Main() {
       <TopMenu/>
       {/* <Router> */}
         <Routes>
+          <Route path='/floor' element={<FloorPlan/>}></Route>
           <Route path='/home' element={<HomePage/>}></Route>
           <Route path= '/' element={<WelcomePage/>}> </Route>
         </Routes>
