@@ -23,20 +23,6 @@
     text-transform: unset;
   }
   
-.Welcome body.flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Welcome body{
-    width: 100vw;
-    height: 100vh;
-    background: lightgray;
-    color: black;
-    font-family:'sans-serif';
-
-}
 
 .Welcome .numPad{
     border-radius: 10px;

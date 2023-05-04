@@ -1,0 +1,9 @@
+.Confirm {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.Confirm .card {
+    max-width: 500px;
+}

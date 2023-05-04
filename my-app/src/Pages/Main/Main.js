@@ -2,14 +2,11 @@ import './Main.css';
 import HomePage from './Home-Page/Home-Page'
 import WelcomePage from './WelcomePage/WelcomePage';
 import TopMenu from '../../Components/Top-Menu/Top-Menu';
-import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
+import Setup from './Setup-Pages/Setup';
 
 import {
-  BrowserRouter as Router,
   Routes,
-  Route,
-  Link
-} from 'react-router-dom';
+  Route} from 'react-router-dom';
 
 
 function Main() {
@@ -18,6 +15,7 @@ function Main() {
       <TopMenu/>
       {/* <Router> */}
         <Routes>
+          <Route path='/setup/*' element={<Setup/>}></Route>
           <Route path='/home' element={<HomePage/>}></Route>
           <Route path= '/' element={<WelcomePage/>}> </Route>
         </Routes>
