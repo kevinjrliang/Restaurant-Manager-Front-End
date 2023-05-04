@@ -18,7 +18,7 @@ export default function Account() {
         phoneNo: '',
         restaurantPhoneNo: '',
         restaurantName: '',
-        street: '',
+        addressLine: '',
         city: '',
         provState: '',
         postalCode: ''
@@ -118,17 +118,14 @@ export default function Account() {
                             name='restaurantPhoneNo' 
                             onChange={(e) => onChange(e)}></MDBInput>
                         </MDBValidationItem>
-                        <div className='mb-2'>
-                            <h5>Address</h5>
-                        </div>
-                        <MDBValidationItem className='col-12 mb-5' feedback='Please enter a valid street address' invalid>
+                        <MDBValidationItem className='col-12 mb-5' feedback='Please enter a valid address line' invalid>
                             <MDBInput
                              className="bg-light" 
-                             label='Street' 
+                             label='Address Line' 
                              id='form1'
                              required 
                              type='text' 
-                             name='street' 
+                             name='Address Line' 
                              onChange={(e) => onChange(e)}></MDBInput>   
                         </MDBValidationItem>
                         <MDBValidationItem className='col-12 mb-5' feedback='Please enter a valid city' invalid>
