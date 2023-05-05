@@ -13,13 +13,11 @@ function Main() {
   return (
     <div className='Main'>
       <TopMenu/>
-      {/* <Router> */}
         <Routes>
           <Route path='/setup/*' element={<Setup/>}></Route>
           <Route path='/home' element={<HomePage/>}></Route>
           <Route path= '/' element={<WelcomePage/>}> </Route>
         </Routes>
-      {/* </Router> */}
     </div>
   );
 }

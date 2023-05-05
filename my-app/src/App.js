@@ -3,9 +3,7 @@ import Main from './Pages/Main/Main';
 import Public from './Pages/Public/Public';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
-
 function App() {
-  
   function isLoggedIn() {
     const user = localStorage.getItem('user');
     return !!user;

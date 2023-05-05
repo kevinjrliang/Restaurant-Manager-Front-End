@@ -7,10 +7,14 @@ import { login } from '../../../Services/UserAccountService'
 import { useState } from 'react';
 import toast, { Toaster, ToastBar } from "react-hot-toast";
 
+import {useTranslation, Trans } from 'react-i18next';
+
 function Login() {
-  const successToast = () => toast.success("Success! Logging in...");
-  const errorToast = () => toast.error("An error has occured.");
-  const userDoesNotExistToast = () => {toast.error("Incorrect email or password")};
+  const { t } = useTranslation();
+
+  const successToast = () => toast.success(t("login.toast.login_success"));
+  const errorToast = () => toast.error(t("login.toast.error"));
+  const userDoesNotExistToast = () => {toast.error(t("login.toast.incorrect_login"))};
   const [formValue, setFormValue] = useState({
     username: '',
     password: ''
@@ -54,16 +58,16 @@ function Login() {
   return (
     <div>
       <div className = "login-header">
-        {/* <input type = "button" className = "register" value = "Sign Up"></input> */}
         <Link to="/signUp">
-          <MDBBtn className ="btn btn-primary">Sign Up</MDBBtn>
+          <MDBBtn className ="btn btn-primary">{t("login.signup_button")}</MDBBtn>
         </Link>
       </div>
       <div className='Login'>
         <div className = "title">
-          <h1 id = "headertext"> Order Up! </h1>
+          <h1 id = "headertext"> {t("login.company_name")} </h1>
         </div>
         <img className = "Login-logo" src ={logo} alt="logo"></img>
+        {/* TODO: Add space between the bottom of the card and the screen. See the sign up page for reference*/}
         <MDBCard className='w-25'>
           <MDBCardBody>
           <MDBValidation className='g-3' onSubmit={(event) => onSubmit(event)} name='form'>
@@ -86,11 +90,11 @@ function Login() {
                     </ToastBar>
                   )}
             </Toaster>
-            <MDBValidationItem className='col-12' feedback='Please enter a valid email' invalid>
-              <label><b>Email</b></label>
+            <MDBValidationItem className='col-12' feedback={t("login.invalid_email_message")} invalid>
+              <label><b>{t("login.email")}</b></label>
               <br></br>
               <MDBInput 
-                label='Email'
+                label={t("login.email")}
                 id='validationCustomUsername'
                 type='email'
                 name='username'
@@ -100,11 +104,11 @@ function Login() {
               />
             </MDBValidationItem>
             <br></br>
-            <MDBValidationItem className='col-12' feedback='This field can not be left blank' invalid>
-              <label><b>Password</b></label>
+            <MDBValidationItem className='col-12' feedback={t("login.invalid_password_message")} invalid>
+              <label><b>{t("login.password")}</b></label>
               <br></br>
               <MDBInput 
-                label='Password'
+                label={t("login.password")}
                 id='validationCustomPassword'
                 type='password'
                 name='password'
@@ -114,9 +118,11 @@ function Login() {
               />
             </MDBValidationItem>
             <br></br>
-            <MDBBtn className ="btn btn-primary" type="submit">Login</MDBBtn>
+            <MDBBtn className ="btn btn-primary" type="submit">{t("login.login")}</MDBBtn>
             <br></br> <br></br>
-            Don't have an account? Signup <Link to="/signUp">here</Link>
+            <Trans i18nKey={"login.signup_description"}>
+              Don't have an account? Signup <Link to="/signUp">here</Link>
+            </Trans>
           </MDBValidation>
           </MDBCardBody>
         </MDBCard>

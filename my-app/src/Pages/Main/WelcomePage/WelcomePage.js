@@ -5,8 +5,11 @@ import {MDBBtn,
 
 import React, { useState } from 'react';
 
+import { useTranslation, Trans} from 'react-i18next';
+
 export default function WelcomePage()
 {
+    const { t } = useTranslation();
     const [data, setData] = useState("");
 
     function getData(val)
@@ -29,12 +32,12 @@ export default function WelcomePage()
 
     function Login()
     {
-        //Check Login password with Database
+        //TODO: Check Login password with Database
     }
 
     return(
         <div className ="Welcome">
-            <span className="welcomeTitle">Welcome!</span>
+            <span className="welcomeTitle">{t("welcome_page.title")}</span>
             <div className="numpad">
                 <div className="nums">
                     <MDBRow>
@@ -75,14 +78,14 @@ export default function WelcomePage()
                     </MDBRow>
                     <MDBRow>
                         <MDBCol className="col-4">
-                            <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={removeText}>Back</MDBBtn>
+                            <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={removeText}>{t("welcome_page.back_button")}</MDBBtn>
                         </MDBCol>
                         <MDBCol className="col-4">
                             <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={() => {appendText(0)}}>0</MDBBtn>
                         </MDBCol>
                         <MDBCol className="col-4">
                             <Link to="/main/home">
-                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={Login}>Login</MDBBtn>
+                                <MDBBtn className="btn btn-primary btn-sq-responsive" onClick={Login}>{t("welcome_page.login_button")}</MDBBtn>
                             </Link>
                         </MDBCol>
                     </MDBRow>
