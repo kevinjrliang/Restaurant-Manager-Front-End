@@ -1,0 +1,75 @@
+{
+    "home_page" : {
+        "title": "Página de Inicio",
+        "takeout": "Llevar",
+        "tables": "Mesas",
+        "menus": "Menús",
+        "table_label": "M",
+        "takeout_label": "L",
+        "menu_label": "M"
+    },
+    "login": {
+        "signup_button": "INSCRIBIRSE",
+        "company_name": "Order Up",
+        "invalid_email_message": "Por favor introduzca una dirección de correo electrónico válida",
+        "email": "Correo Electrónico",
+        "invalid_password_message": "Por favor introduce una contraseña válida",
+        "password": "Contraseña",
+        "login": "Acceso",
+        "signup_description": "¿No tienes una cuenta? Registrate <1>aquí</1>",
+        "toast": {
+            "login_success": "¡Éxito! Iniciando sesión...",
+            "error": "Se ha producido un error",
+            "incorrect_login": "Correo o contraseña incorrectos"
+        }
+    },
+    "signup": {
+        "login_button": "ACCESO",
+        "company_name": "Order Up",
+        "invalid_email_message": "Por favor ingrese un correo electrónico válido y único",
+        "email": "Correo Electrónico",
+        "invalid_password_message": "Las contraseñas deben tener al menos 6 caracteres",
+        "password": "Contraseña",
+        "invalid_confirm_password_message": "Las contraseñas deben coincidir",
+        "confirm_password": "Confirmar Contraseña",
+        "signup": "Inscribirse",
+        "login_description": "¿Ya tienes una cuenta? Entre <1>aquí</1>",
+        "toast": {
+            "signup_success": "¡Cuenta creada! Por favor revise su correo electrónico para completar su configuración",
+            "error": "Se ha producido un error",
+            "username_taken": "Ya existe una cuenta con este nombre"
+        }
+    },
+    "welcome_page": {
+        "title": "Bienvenido",
+        "back_button": "Atrás",
+        "login_button": "Acceso"
+    },
+    "account": {
+        "title": "¡Bienvenido a Order Up!",
+        "description": "Para comenzar, primero necesitaremos sus datos. Quedarás registrado como propietario.",
+        "invalid_first_name_message": "Este campo no puede tener menos de 2 caracteres",
+        "first_name": "Nombre de pila",
+        "invalid_last_name_message": "Este campo no puede tener menos de 2 caracteres",
+        "last_name": "Apellido",
+        "invalid_phone_number_message": "Por favor ingrese un número de teléfono válido",
+        "phone_number": "Número de teléfono",
+        "invalid_restaurant_phone_number_message": "Por favor ingrese un número de teléfono válido",
+        "restaurant_phone_number": "Número de teléfono del restaurante",
+        "invalid_address_line_message": "Ingrese una línea de dirección válida",
+        "address_line": "Dirección",
+        "invalid_city_message": "Por favor introduzca una ciudad válida",
+        "city": "Ciudad",
+        "invalid_province_message": "Por favor ingrese una provincia válida",
+        "province": "Provincia",
+        "invalid_postal_code_message": "Por favor ingrese un código postal válido",
+        "postal_code": "Código Postal",
+        "next_button": "Continuar"
+    },
+    "confirm": {
+        "title": "¡Un último paso!",
+        "description": "Acabamos de enviarle un correo electrónico de confirmación junto con un código. Por favor, introduzca el código de abajo.",
+        "back_button": "Atrás",
+        "confirm_button": "Confirmar"
+    }
+}

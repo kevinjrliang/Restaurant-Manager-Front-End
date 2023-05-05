@@ -7,11 +7,15 @@ import { createUserAccount, getAllUsers } from '../../../Services/UserAccountSer
 import { useState } from 'react';
 import { Access_Level } from '../../../Models/User_Accounts/enums';
 import toast, { Toaster, ToastBar } from "react-hot-toast";
+import {useTranslation, Trans } from 'react-i18next';
 
 
 
 function SignUp() {
+  const { t } = useTranslation();
   const usernamesTaken = [];
+
+  // TODO: Change this logic to be in the backend
   getAllUsers().then(response => {
     if (response.error) {
 
@@ -22,9 +26,9 @@ function SignUp() {
     }
     
   });
-  const successToast = () => toast.success("Account created! Please check your email to complete your setup.");
-  const errorToast = () => toast.error("An error has occured.");
-  const usernameTakenToast = () => {toast.error("There is already an account with this name.")};
+  const successToast = () => toast.success(t("signup.toast.signup_success"));
+  const errorToast = () => toast.error(t("signup.toast.error"));
+  const usernameTakenToast = () => {toast.error(t("signup.toast.username_taken"))};
   const minPasswordLength = 6;
 
   const [formValue, setFormValue] = useState({
@@ -36,7 +40,7 @@ function SignUp() {
   function onChange(e) {
     if (e.target.name === 'username') {
       if (e.target.value !== '' &&  usernamesTaken.includes(e.target.value)) {
-        e.target.setCustomValidity('Username already taken');
+        e.target.setCustomValidity(t("signup.toast.username_taken"));
       }
       else{
         e.target.setCustomValidity('');
@@ -84,12 +88,12 @@ function SignUp() {
     <div>
       <div className = "signup-header">
         <Link to="/">
-          <MDBBtn className ="btn btn-primary" type='button'>Log In</MDBBtn>
+          <MDBBtn className ="btn btn-primary" type='button'>{t("signup.login_button")}</MDBBtn>
         </Link>
       </div>
       <div className='SignUp'>
         <div className = "title">
-          <h1 id = "headertext"> Order Up! </h1>
+          <h1 id = "headertext"> {t("signup.company_name")} </h1>
         </div>
         <img className = "SignUp-logo" src ={logo} alt="logo"></img>
         <MDBCard className='w-25 mb-5'>
@@ -114,11 +118,12 @@ function SignUp() {
                   </ToastBar>
                 )}
               </Toaster>
-              <MDBValidationItem className='col-12' feedback='Please choose a unique and valid email' invalid>
-                <label><b>Email</b></label>
+              <MDBValidationItem className='col-12' feedback={t("signup.invalid_email_message")} invalid>
+                <label><b>{t("signup.email")}</b></label>
                 <br></br>
                 <MDBInput 
-                  label='Email'
+                  className='bg-light'
+                  label={t("signup.email")}
                   id='validationCustomUsername'
                   type='email'
                   name='username'
@@ -128,12 +133,12 @@ function SignUp() {
                 />
               </MDBValidationItem>
               <br></br>
-              <MDBValidationItem className='col-12' feedback='Password must be a minimum of 6 characters.' invalid>
-                <label><b>Password</b></label>
+              <MDBValidationItem className='col-12' feedback={t("signup.invalid_password_message")} invalid>
+                <label><b>{t("signup.password")}</b></label>
                 <br></br>
                 <MDBInput 
                   className="bg-light" 
-                  label='Password' 
+                  label={t("signup.password")} 
                   id='validationCustomPassword' 
                   minLength={minPasswordLength}
                   type='password'
@@ -144,12 +149,12 @@ function SignUp() {
                 />
               </MDBValidationItem>
               <br></br>
-              <MDBValidationItem className='col-12' feedback='Password must match.' invalid>
-                <label><b>Confirm Password</b></label>
+              <MDBValidationItem className='col-12' feedback={t("signup.invalid_confirm_password_message")} invalid>
+                <label><b>{t("signup.confirm_password")}</b></label>
                 <br></br>
                 <MDBInput 
                   className="bg-light" 
-                  label='Confirm Password' 
+                  label={t("signup.confirm_password")}
                   id='validationCustomConfirmPassword' 
                   type='password'
                   pattern = {`${formValue.password}`}
@@ -160,9 +165,11 @@ function SignUp() {
                 />
               </MDBValidationItem>
               <br></br>
-              <MDBBtn className="btn btn-primary" type='submit'>Sign up</MDBBtn>
+              <MDBBtn className="btn btn-primary" type='submit'>{t("signup.signup")}</MDBBtn>
               <br></br> <br></br>
-              Already have an account? Login <Link to="/">here</Link>
+              <Trans i18nKey={"signup.login_description"}>
+                Already have an account? Login <Link to="/">here</Link>
+              </Trans>
             </MDBValidation>
           </MDBCardBody>
         </MDBCard>

@@ -1,4 +1,4 @@
-import './Top-Menu.css';
+import './Public-Top-Menu.css';
 import Logo from '../../Images/logo.svg'
 import {useTranslation, Trans } from 'react-i18next';
 
@@ -7,7 +7,8 @@ const lngs = {
   es: { nativeName: 'Español' }
 }
 
-function TopMenu() {
+function PublicTopMenu() {
+  // TODO: Complete top menu for public page
   const { t, i18n } = useTranslation();
 
   const changeLanguages = (lng) => {
@@ -71,4 +72,4 @@ function TopMenu() {
   );
 }
 
-export default TopMenu;
+export default PublicTopMenu;

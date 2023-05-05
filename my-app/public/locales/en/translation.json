@@ -1,0 +1,75 @@
+{
+    "home_page": {
+        "title": "Home Page",
+        "takeout": "Takeout",
+        "tables": "Tables",
+        "menus": "Menus",
+        "table_label": "T",
+        "takeout_label": "T",
+        "menu_label": "M"
+    },
+    "login": {
+        "signup_button": "SIGN UP",
+        "company_name": "Order Up",
+        "invalid_email_message": "Please enter a valid email",
+        "email": "Email",
+        "invalid_password_message": "Please enter a valid password",
+        "password": "Password",
+        "login": "Login",
+        "signup_description": "Don't have an account? Sign up <1>here</1>",
+        "toast": {
+            "login_success": "Success! Logging in...",
+            "error": "An error has occurred",
+            "incorrect_login": "Incorrect email or password"
+        }
+    },
+    "signup": {
+        "login_button": "LOGIN",
+        "company_name": "Order Up",
+        "invalid_email_message": "Please enter a valid and unique email",
+        "email": "Email",
+        "invalid_password_message": "Passwords must be at least 6 characters long",
+        "password": "Password",
+        "invalid_confirm_password_message": "Passwords must match",
+        "confirm_password": "Confirm Password",
+        "signup": "Sign up",
+        "login_description": "Already have an account? Login <1>here</1>",
+        "toast": {
+            "signup_success": "Account created! Please check your email to complete your setup",
+            "error": "An error has occurred",
+            "username_taken": "There is already an account with this name"
+        }
+    },
+    "welcome_page": {
+        "title": "Welcome",
+        "back_button": "Back",
+        "login_button": "Login"
+    },
+    "account": {
+        "title": "Welcome to Order Up!",
+        "description": "To get started, we will first need your details. You will be registered as the owner.",
+        "invalid_first_name_message": "This field can not be less than 2 characters",
+        "first_name": "First Name",
+        "invalid_last_name_message": "This field can not be less than 2 characters",
+        "last_name": "Last Name",
+        "invalid_phone_number_message": "Please enter a valid phone number",
+        "phone_number": "Phone Number",
+        "invalid_restaurant_phone_number_message": "Please enter a valid phone number",
+        "restaurant_phone_number": "Restaurant Phone Number",
+        "invalid_address_line_message": "Please enter a valid address line",
+        "address_line": "Address Line",
+        "invalid_city_message": "Please enter a valid city",
+        "city": "City",
+        "invalid_province_message": "Please enter a valid province",
+        "province": "Province",
+        "invalid_postal_code_message": "Please enter a valid postal code",
+        "postal_code": "Postal Code",
+        "next_button": "Next"
+    },
+    "confirm": {
+        "title": "One Last Step!",
+        "description": "We just sent you a confirmation email along with a code. Please enter the code below.",
+        "back_button": "Back",
+        "confirm_button": "Confirm"
+    }
+}
