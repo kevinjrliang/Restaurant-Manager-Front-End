@@ -89,10 +89,10 @@
     font-size: 15px;
   }
   
-  .SignUp button.btn-primary:hover {
+  .SignUp-global button.btn-primary:hover {
     background-color: #787a7a;
   }
   
-  .SignUp button.btn {
+  .SignUp-global button.btn{
     text-transform: unset;
   }

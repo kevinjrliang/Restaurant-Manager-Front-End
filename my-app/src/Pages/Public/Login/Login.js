@@ -16,7 +16,7 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className='login-global'>
       <div className = "login-header">
         {/* <input type = "button" className = "register" value = "Sign Up"></input> */}
         <Link to="/signUp">
@@ -46,7 +46,7 @@ function Login() {
                 <MDBBtn className ="btn btn-primary" onClick={() => {login()}}>Login</MDBBtn>
               </Link>
               <br></br> <br></br>
-              Don't have an account? Signup <Link to="/signUp">here</Link>
+              Don't have an account? Sign up <Link to="/signUp">here</Link>
             </form>
           </div>
           </MDBCardBody>

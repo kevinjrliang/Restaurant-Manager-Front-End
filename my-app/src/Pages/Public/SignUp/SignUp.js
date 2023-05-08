@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function SignUp() {
   return (
-    <div>
+    <div className='SignUp-global'>
       <div className = "signup-header">
         {/* <input type = "button" className = "register" value = "Home"></input> */}
         <Link to="/">

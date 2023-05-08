@@ -87,10 +87,10 @@ div.login-header {
   font-size: 15px;
 }
 
-.Login button.btn-primary:hover {
+.login-global button.btn-primary:hover {
   background-color: #787a7a;
 }
 
-.Login button.btn {
+.login-global button.btn {
   text-transform: unset;
 }
